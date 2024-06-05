@@ -1,0 +1,27 @@
+credentials:
+  usernames:
+    lena:
+      email: xx@gmail.com
+      failed_login_attempts: 0 # Will be managed automatically
+      logged_in: False # Will be managed automatically
+      name: Lena Schmidt
+      password: ls # Will be hashed automatically
+    IOuser:
+      email: xx@gmail.com
+      failed_login_attempts: 0 # Will be managed automatically
+      logged_in: False # Will be managed automatically
+      name: IO User
+      password: IOnewcastle # Will be hashed automatically
+    Guest:
+      email: xx@gmail.com
+      failed_login_attempts: 0 # Will be managed automatically
+      logged_in: False # Will be managed automatically
+      name: Guest User
+      password: tempuser2024 # Will be hashed automatically
+cookie:
+  expiry_days: 30
+  key: hstools_signature_key # Must be string
+  name: hstools_cookie
+pre-authorized:
+  emails:
+  - xx@gmail.com
