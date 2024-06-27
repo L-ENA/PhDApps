@@ -1,3 +1,4 @@
+#streamlit run C:\Users\c1049033\PycharmProjects\phd_apps\Welcome.py
 import streamlit as st
 from utils import my_authenticator
 

@@ -92,6 +92,7 @@ def ris_converter():
                'id': i,
                'TI': row["title"],  # title of the news article
                "T2": row["media"],  # the newspaper or source publishing this article
+               "AU": row["media"].replace(",", " ").replace("  ", " ").strip()+",",  # the newspaper or source publishing this article
                # 'AB': row["description"],#potentially the scraped text could be added as abstract, but I decided to keep it slim for now because the abstract won't appear in the citation.
                "PY": pyr,  # year of publication of the article
                "UR": row["link"],
