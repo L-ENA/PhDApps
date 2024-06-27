@@ -8,15 +8,8 @@ streamlit==1.35.0
 streamlit_authenticator==0.3.2
 tqdm==4.66.4
 lxml_html_clean==0.1.1
-numpy=1.26.4
-transformers>=4.38.0,<5.0.0
-torch>=1.11.0
-numpy<2.0.0
-scikit-learn
-scipy
-huggingface-hub>=0.19.3
-Pillow
-datasets
-accelerate>=0.20.3
+<<<<<<< HEAD
+numpy~=1.26.4
 sentence-transformers=3.0.1
-
+=======
+>>>>>>> c9f365d2f0903b6a07cea0a3630dfd92a3ff2898
