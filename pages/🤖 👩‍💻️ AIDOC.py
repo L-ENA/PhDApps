@@ -42,6 +42,8 @@ if st.session_state["authentication_status"]:
     st.markdown('''# 🤖 👩‍💻️  :rainbow[AIDOC]: :rainbow[A]rtificial :rainbow[I]ntelligence :rainbow[D]ocument :rainbow[O]rganiser and :rainbow[C]lassifier''')
 
     st.write('&nbsp;')#empty line
+    st.write("AIDOC is a tool to re-order and prioritise data within spreadsheets. Given only a handful of relevant data within a spreadsheet, it can help you to find more similar data and to bring rows to the top for faster sifting. If you have a large spreadsheet (>4000 rows), this may take time to compute by the tool, then you can get in touch with the Data Science team as we can help by pre-computitng some values for the AI offline. AIDOC can prioritise binary data (eg. Yes/No decisions) or categorical variables (eg. different NIHR remits). Please watch the tutorial video on the bottom of the page for more info. Additionally, some text describing the methods of this tool can be found below.")
+    st.write('&nbsp;')  # empty line
     st.write("## Step 1: Upload a CSV file")
 
     uploaded_file = st.file_uploader("Upload CSV file containing records to screen, at least 3 relevant references should be labelled already.")
@@ -114,6 +116,16 @@ if st.session_state["authentication_status"]:
     if st.session_state.initialised:
         if st.button("Reorder now!"):
             reorder_me()
+    st.write('&nbsp;')  # empty line
+    st.video("https://youtu.be/kFFne3qv7zI")
+    st.markdown("## Description of the methods")
+    st.write("After manually screening (XX) records, we used the in-house tool AIDOC (Artificial Intelligence Document Organiser and Classifier) to re-order the list of records to prioritise the most likely records for (each remit/each category/inclusion). This record priorisation algorithm works in a similar fashion to the well-known active-learning algorithms in the field of systematic review automation (Ferdinands 2023). However, these algorithms commonly work on titles and abstracts of journal articles; while our in-house version is flexible and customisable to handle heterogeneous data such as trial registry entries or funding information. Our approach is based on the semantic similarity between text fields such as grant titles or short summaries, using a neural network that was pre-trained on a large corpus of scientific literature (Cohan 2020). For (each remit/each category/inclusion), X most likely records were screened manually. Optional (get in touch with DS&AI team): We can evaluate the performance of the tool once enough articles have been sifted, to see how efficient the tool is in detecting relevant evidence. This can be used to justify early-stopping of sifting, but should be discussed with someone from DS&AI in ALL cases until we are able to give a definite guidance on the subject.")
+    st.write('&nbsp;')  # empty line
+    st.write("Ferdinands, G., Schram, R., de Bruin, J. et al. Performance of active learning models for screening prioritization in systematic reviews: a simulation study into the Average Time to Discover relevant records. Syst Rev 12, 100 (2023). https://doi.org/10.1186/s13643-023-02257-7")
+    st.write("Cohan, A., Feldman, S.,Beltagy, I et al. SPECTER: Document-level Representation Learning using Citation-informed Transformers. In Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics, pages 2270–2282, (2020) Online. Association for Computational Linguistics. https://aclanthology.org/2020.acl-main.207")
+
+
+
 
 
 

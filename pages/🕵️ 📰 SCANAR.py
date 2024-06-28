@@ -143,6 +143,21 @@ if st.session_state["authentication_status"]:
         get_parameters()
         get_news_data()
 
+    #
+    st.write('&nbsp;')  # empty line
+    st.video("https://youtu.be/5INnu6h8iI0")
+    st.markdown("## Description of the methods")
+    st.write("As described in the MedTech Horizon Scanning Methods Handbook")
+    st.write("News are a routine source for weak signal detection for the different types of scans that the Innovation Observatory undertakes. Google News is a news aggregator service by Google – said to be the world’s largest, covering articles in 35 languages and > 50,000 news sources from > 20,000 publishers [1]. Their sources include general and topic-specific news sites, as well as press releases from industry and universities. Google and Google news are the biggest single driver of traffic to top news sites [2]. Robust news searching using the current Google news interface is precluded. Manually entering search strings on the Google News website, specifying timeframes, and then copy-pasting relevant results is time-consuming. This means only the first few pages of results can be processed and that there is no documentation of the search process and the number of hits. The manual process may also have limited reproducibility, as different people may obtain different results due to varying speed and covering more/less results.")
 
+    st.write("The Innovation Observatory’s custom built SCANAR (Search Companion for Advanced News Article Retrieval) tool has a large potential for time-saving during scans by eliminating the need for manual retrieval of news articles. It also improves reproducibility and transparency of the process by providing a detailed search documentation. The tool’s strengths are that it accepts multiple search queries as input, thus encouraging comprehensive and systematic searching. It downloads full texts of articles, de-duplicates results, and provides an automatic unsupervised ranking that orders articles to the top that were relevant to most input queries. It provides three outputs: ")
+
+    st.write("A spreadsheet with all ranked news articles, including titles, full texts, news source, time of publication. ")
+
+    st.write("A search documentation spreadsheet that indicates how many search results were produced by each query, how many articles were retrieved, and how many duplicate articles appeared between queries.")
+
+    st.write("A bibliographic citation file in RIS (Research Information Systems) format that includes all article metadata ready for import into a reference manager software such as EndNote. This leads to downstream time-savings as it enables colleagues who write up reports to easily cite relevant news articles.  ")
+    st.write("[1] https://en.wikipedia.org/wiki/Google_News")
+    st.write("[2] https://www.pewresearch.org/wp-content/uploads/sites/8/legacy/nielsen-study-copy.pdf")
 
 
